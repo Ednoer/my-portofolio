@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from '../assets/icons/ednoer.svg'
 
 const Nav = styled.nav`
+  z-index: 99;
   padding: 12px 40px;
   display: flex;
   align-items: center;

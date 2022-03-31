@@ -15,7 +15,6 @@ const ButtonGroup = styled(BsButtonGroup)`
     color: #525966;
     padding: 8px 12px;
     align-items: center;
-    z-index: -999;
     svg {
       margin-right: 8px;
     }
