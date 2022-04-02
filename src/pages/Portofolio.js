@@ -9,7 +9,7 @@ import AppStore from '../assets/icons/ic-download-ios.svg'
 
 const Section = styled.section`
   height: auto;
-  margin-top: 51px;
+  margin-top: 20px;
 `
 const Card = styled.div`
   margin-top: 10px;
@@ -37,6 +37,16 @@ const Card = styled.div`
 const Image = styled.img`
   width: auto;
   height: 50px;
+`
+
+const DivRow = styled(Row)`
+  @media only screen and (max-width: 1000px) {
+    .text-main {
+      margin-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 `
 
 const listData = [
@@ -74,9 +84,9 @@ const About = () => {
   }
   return (
     <Section>
-      <Row>
+      <DivRow>
         <Col
-          className="d-flex flex-column align-items-between justify-content-center"
+          className="d-flex flex-column align-items-between justify-content-center text-main"
           style={{ paddingTop: 60 }}
         >
           {listData.map((el) => (
@@ -110,10 +120,10 @@ const About = () => {
             </Card>
           ))}
         </Col>
-        <Col className="d-flex justify-content-end">
+        <Col className="d-md-flex d-lg-flex justify-content-end d-none d-md-block d-lg-block">
           <iframe title="abstraksi" src={giphy} width="520" height="520" frameBorder="0"></iframe>
         </Col>
-      </Row>
+      </DivRow>
     </Section>
   )
 }

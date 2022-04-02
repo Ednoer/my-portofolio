@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <Section>
         <p>Endang Nuradi &copy; {year}</p>
-        <p>🌖 🌗 🌘 🌑 🌒 🌓 🌔</p>
+        <p>🌘 🌑 🌒</p>
     </Section>
   )
 }

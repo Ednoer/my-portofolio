@@ -26,6 +26,16 @@ const ButtonGroup = styled(BsButtonGroup)`
   }
 `
 
+const DivRow = styled(Row)`
+  @media only screen and (max-width: 1000px) {
+    .text-main {
+      margin-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+`
+
 const Home = () => {
   const goToNewTab = (link) => {
     window.open(link, '_blank')
@@ -33,8 +43,8 @@ const Home = () => {
 
   return (
     <Section>
-      <Row>
-        <Col className="d-flex flex-column align-items-between justify-content-center">
+      <DivRow>
+        <Col className="d-flex flex-column align-items-between justify-content-center text-main">
           <h1>Hi, I'm Endang Nuradi</h1>
           <h6>Software Engineer</h6>
           <p>
@@ -67,10 +77,10 @@ const Home = () => {
             </ButtonGroup>
           </div>
         </Col>
-        <Col className="d-flex justify-content-end">
+        <Col className="d-md-flex d-lg-flex justify-content-end d-none d-md-block d-lg-block">
           <iframe title="abstraksi" src={giphy} width="520" height="520" frameBorder="0"></iframe>
         </Col>
-      </Row>
+      </DivRow>
     </Section>
   )
 }
