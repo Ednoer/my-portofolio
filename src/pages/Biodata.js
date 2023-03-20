@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { ButtonGroup as BsButtonGroup, Row, Col } from 'react-bootstrap'
 import giphy from '../assets/animations/giphy.gif'
-import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai'
+import { AiOutlineGithub, AiFillLinkedin, AiFillGitlab } from 'react-icons/ai'
 
 const Section = styled.section`
   height: auto;
@@ -52,12 +52,22 @@ const Home = () => {
             searching for challenges and a great teamwork.
           </p>
           <p>
-            My area of expertise is React JS, Javascript, Typescript, Scss/Css, Redux, Golang, Echo,
-            GRPC, GCP, AWS, Algorithms and data structure.
+            My area of expertise is React JS, Javascript, Typescript, Scss/Css, Redux, Golang,
+            Google Pubsub, Kafka (Redpanda), Elasticsearch,  Docker, Jenkins, Docker, Datadog, Sentry, Unleash
           </p>
           <div className="d-flex">
             <ButtonGroup
               className="text-right"
+              onClick={() => goToNewTab('https://gitlab.com/endang_nuradi')}
+            >
+              <button type="button" className="btn btn-light">
+                <AiFillGitlab size={20} />
+                Gitlab
+              </button>
+            </ButtonGroup>
+            <ButtonGroup
+              className="text-right"
+              style={{ marginLeft: 10 }}
               onClick={() => goToNewTab('https://github.com/Ednoer')}
             >
               <button type="button" className="btn btn-light">
@@ -67,7 +77,7 @@ const Home = () => {
             </ButtonGroup>
             <ButtonGroup
               className="text-right"
-              style={{ marginLeft: 20 }}
+              style={{ marginLeft: 10 }}
               onClick={() => goToNewTab('https://www.linkedin.com/in/endang-nuradi-b4314ab1/')}
             >
               <button type="button" className="btn btn-light">

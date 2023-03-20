@@ -29,6 +29,11 @@ const Nav = styled.nav`
     justify-content: space-between;
   }
 
+  .show > .btn-primary.dropdown-toggle {
+    background-color: #404040;
+    border-color: #404040;
+  }
+
   @media only screen and (max-width: 768px) {
     .nav-lg {
       display: none;
@@ -65,7 +70,7 @@ const List = styled.ul`
 `
 
 const Image = styled.img`
-  width: 88px;
+  width: 68px;
   height: auto;
 `
 
